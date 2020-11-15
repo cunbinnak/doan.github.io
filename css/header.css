@@ -1,0 +1,198 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  background: #fff;
+}
+
+.wrapper .header{
+  z-index: 1;
+  background: #fff;
+  position: fixed;
+  width: calc(100% - 0%);
+  height: 70px;
+  display: flex;
+  top: 0px;
+}
+
+.wrapper .header .header-menu{
+  width: calc(100% - 0%);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.wrapper .header .header-menu .title{
+  color: #B5A132;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.wrapper .header .header-menu .title span{
+  color: #1E1F1F;
+}
+
+.wrapper .header .header-menu .sidebar-btn{
+  color: #444;
+  position: absolute;
+  margin-left: 210px;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+
+.wrapper .header .header-menu ul{
+  display: flex;
+}
+
+.wrapper .header .header-menu ul li a{
+  color: #B9B6B6;
+  display: block;
+  margin: 0 12px;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  transition: 1s;
+  text-decoration: none;
+  transition-property: background, color;
+}
+
+.wrapper .header .header-menu ul li a:hover{
+    color: #000;
+}
+.sign_in{
+  padding-left: 10px;
+  margin-left: 20px;
+  border-left: 0.6px solid #444;
+}
+.wrapper .sidebar{
+  z-index: 10;
+  background: #FAF9F5;
+  position: fixed;
+  top: 70px;
+  width: 0;
+  height:100%;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.wrapper .sidebar .sidebar-menu{
+  overflow: hidden;
+}
+
+
+.wrapper .sidebar .sidebar-menu .item{
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn{
+  display: block;
+  color: #515050;
+  text-decoration: none;
+  position: relative;
+  padding: 25px 20px;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn:hover{
+  color: #000;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn i{
+  margin-right: 20px;
+}
+
+.wrapper .sidebar .sidebar-menu .item .menu-btn .drop-down{
+  float: right;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu{
+  background: #3498DB;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.3s;
+  transition-property: background, max-height;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a{
+  display: block;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 15px;
+  padding: 20px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:hover{
+  background: #55B1F0;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu a:not(last-child){
+  border-bottom: 1px solid #8FC5E9;
+}
+
+.wrapper .sidebar .sidebar-menu .item .sub-menu i{
+  padding-right: 20px;
+  font-size: 10px;
+}
+
+.wrapper .sidebar .sidebar-menu .item:target .sub-menu{
+  max-height: 500px;
+}
+
+.wrapper .main-container{
+  width: 100%;
+  margin-top: 60px;
+  padding: 15px;
+  background-size: cover;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.wrapper.collapses .sidebar{
+  width: 250px;
+}
+
+
+.wrapper.collapses .sidebar .sidebar-menu .item .menu-btn{
+  font-size: 18px;
+}
+
+.wrapper.collapses .sidebar .sidebar-menu .item .sub-menu i{
+  font-size: 18px;
+  padding-left: 3px;
+}
+
+.wrapper.collapses .main-container{
+  width:100% /* calc(100% - 250px) */;
+/*   margin-left: 250px; */
+}
+/* @media (max-width: 992px) {
+  .wrapper .header .header-menu .sidebar-btn{
+    display: block;
+  }
+  .wrapper .header .header-menu ul{
+    display: none;
+  }
+} */
+

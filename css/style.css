@@ -1,0 +1,250 @@
+.lSAction>.lSPrev{
+  display: none;
+  left: 20px;
+}
+.lSAction>a{
+  display: none;
+ background-image: none;
+ align-items: center;
+}
+.lSAction>.lSNext{
+   display: none;
+  right: 0px;
+}
+
+.silde_banner:hover .lSAction>.lSPrev,
+.silde_banner:hover .lSAction>.lSNext {
+  display: block;
+  color: #444;
+
+}
+.custom-prev-html i,
+.custom-next-html i
+{
+  font-size: 40px;
+  color: #000;
+}
+.lSPager{
+  position: absolute;
+  left: 25px;
+  top: 95%;
+  z-index: 0;
+}
+
+/* ..................................................................... */
+
+
+.container{
+  margin-top: 30px;
+}
+.showproduct{
+  margin-bottom: 40px;
+}
+
+.card_product{
+  width: 320px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.img_product {
+  height: 450px;
+  position: relative;
+}
+.img_product img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content_card{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.descrip{
+  display: flex;
+  flex-direction: column;
+}
+.descrip p{
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+.descrip span{
+  color: rgba(26, 26, 26, 0.5);
+}
+.price{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+.price:hover{
+  text-decoration: none;
+  color: #20020F;
+}
+.layout_buy{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(92, 95, 236, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout_buy .btn_buynow{
+  width: 160px;
+  height: 40px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #252525;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: calibri;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+}
+.layout_buy .btn_buynow:hover{
+  color: #fff;
+  background: #f15fa3;
+  transition: all ease 0.3s;
+}
+.layout_buy{
+  visibility: hidden;
+}
+.img_product:hover .layout_buy{
+  visibility: visible;
+  animation:fade 0.5s;
+}
+@keyframes fade {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/*-----------------end cardprduct-----------------*/
+.selling{
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  padding: 30px 20px;
+}
+.selling h3{
+  font-size: 2.5rem;
+  font-family: Jost,sans-serif;
+  color: #282828;
+}
+.selling .conten_sell p{
+  font-size: 16px;
+  color: #686868;
+}
+
+/*---------------------------style cho card selling-------------*/
+
+.sell_box{
+  width: 320px;
+  height: 350px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.img_sellbox{
+  height: 260px;
+  width: 100%;
+ position: relative;
+}
+.img_sellbox img{
+  position: absolute;
+  width: 100%;
+}
+.infor_sell{
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  position: relative;
+  padding: 10px 20px;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0.9;
+  background: rgba(0, 0, 0, 0.4);
+  height: 130px;
+  width: 100%;
+  overflow: hidden;
+  transition:0.6s;
+}
+.infor_sell h4{
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  top: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s;
+}
+.sell_box:hover .infor_sell h4{
+  top: 12px;
+}
+
+.price_sell{
+  position: absolute;
+  text-align: center;
+  top: -40%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  transition: 0.5s;
+}
+.sell_box:hover .infor_sell .price_sell{
+  top: 35px;
+}
+
+.infor_sell a{
+  position: absolute;
+  top: -55%;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  border-radius: 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.sell_box:hover .infor_sell a{
+  top: 60px;
+}
+.infor_sell a:hover{
+  color: #fff;
+  background-color: #EC3030;
+}
+.sell_box:hover .infor_sell{
+  top: -20px;
+}
