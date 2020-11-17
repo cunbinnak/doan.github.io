@@ -1,0 +1,73 @@
+.bg-footer{
+	margin-top: 0;
+	background-color: #f6f6f6;
+	padding-top: 80px;
+}
+.infor-contact img{
+	margin-bottom: 20px;
+}
+.infor-contact p{
+	color: #8d8d8d;
+	font-size: 16px;
+	font-family: Myriad Pro;
+	margin-bottom: 20px;
+}
+.icon-social{
+	margin-bottom: 20px;
+}
+.icon-social .icon{
+	float: left;
+	margin: 15px 8px;
+	width: 30px;
+	height: 30px;
+	padding-top: 3px;
+	border-radius: 15px;
+	text-align: center;
+	transition: 0.5s;
+}
+.icon:hover{
+	margin-top: 5px;
+	width: 35px;
+	height: 35px;
+	border-radius: 17.5px;
+	padding-top: 5px;
+	color: #fe3e57;
+	background-color: #139ad6
+}
+.title-footer h4{
+	color: #29282d;
+	font-size: 22px;
+	font-family: Myriad Pro;
+	margin-bottom: 20px;
+}
+.title-footer p{
+	color: #8d8d8d;
+	font-size: 16px;
+	font-family: Myriad Pro;
+}
+
+.your-address{
+	width: 290px;
+	height: 50px;
+	background-color: #fff;
+	border: none;
+	margin-right: 5px;
+}
+.btn-subcribe{
+	width: 140px;
+	height: 50px;
+	color: #fff;
+	background-color: #fe3e57;
+	border: none;
+}
+.icon-pay{
+	float: right;
+}
+.icon-pay img{
+	margin: 0 10px;
+}
+.icon-pay span{
+	color: #8d8d8d;
+	font-size: 16px;
+	font-family: Myriad Pro;
+}

@@ -1,0 +1,17 @@
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if($(window).scrollTop()>300){
+			$('#back-to-top').css({
+				"opacity":"1","pointer-events":"auto"
+			});
+		}
+		else{
+			$('#back-to-top').css({
+				"opacity":"0","pointer-events":"none"
+			});
+		}
+	});
+	$('#back-to-top').click(function(events){
+		$('html').animate({scrollTop:0},500);
+	});
+});
